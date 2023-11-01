@@ -13,8 +13,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/services">
+          <Route path="/services" element={<Services />} />
+          <Route path="products" element={<Products />} />
+        </Route>
+
+        <Route path="*" element={<h1>Error</h1>} />
       </Routes>
     </BrowserRouter>
   );

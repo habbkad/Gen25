@@ -20,14 +20,13 @@ function Services() {
           </Card.Text>
           <Button
             onClick={() => {
-              navigate("/products");
+              navigate("/services/products");
             }}
           >
             Products
           </Button>
         </Card.Body>
       </Card>
-      <Outlet />
     </div>
   );
 }
