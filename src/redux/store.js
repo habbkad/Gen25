@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-import teacherReducer from "./teacherSlice";
 import teacherSlice from "./teacherSlice";
 import studentSlice from "./studentsSlice";
 

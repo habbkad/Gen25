@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const teacherSlice = createSlice({
   name: "teachers",
-  initialState: [{ name: "Ama", age: 56 }],
+  initialState: { teachers: [{ name: "Ama", age: 56 }] },
   reducers: {
     createTeacher: () => {},
     updateTeacher: () => {},
